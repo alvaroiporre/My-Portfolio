@@ -36,7 +36,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Html & Css.
+Html & Css.
 
 
 ### Key Features <a name="key-features"></a>
@@ -50,7 +50,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+
 - [Live Demo Link](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -58,7 +58,7 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> To get a local copy up and running, follow these steps.
+
 ### Prerequisites
 
 In order to run this project you need:
@@ -78,7 +78,7 @@ Ready for use it.
 
 ## 👥 Authors <a name="authors"></a>
 
->👤 Alvaro Iporre
+👤 Alvaro Iporre
 
 - GitHub: [@alvaroiporre](https://https://github.com/alvaroiporre)
 - Twitter: [@alvaro.iporre](https://twitter.com/twitterhandle)
@@ -103,18 +103,16 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-If you like this project...
+If you like this please ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT-license.txt) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
