@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  box-sizing: 0;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0 0 0 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  padding-top: 24px;
+}
+
+.logo_nav {
+  margin-left: 24px;
+  width: 76px;
+  display: inline-block;
+}
+
+.image_nav {
+  width: 76px;
+}
+
+.menu_icon {
+  margin-right: 36px;
+  height: 12px;
+  width: 18px;
+}
+
+.first_section {
+  margin-top: 36px;
+  background-image: url('images/mobile_background.svg');
+  font-family: 'Poppins', sans-serif;
+}
+
+.content {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  margin-top: 120px;
+  font-size: xxx-large;
+}
+
+.paragraph {
+  margin-top: 15px;
+  text-align: justify;
+  font-size: large;
+}
+
+.connect {
+  margin-top: 15px;
+}
+
+.connect_anchor {
+  text-decoration: none;
+  color: #7f8cff;
+  font-size: medium;
+}
+
+.social_icons {
+  margin-top: 15px;
+  margin-bottom: 100px;
+  display: flex;
+}
+
+.social_icon {
+  margin-right: 15px;
+}
+
+.icon {
+  height: 20px;
+}
+
+.button {
+  border-radius: 10px;
+}
+
+.button:hover {
+  color: white;
+  background: #7f8cff;
+}
+
+.button:active {
+  color: white;
+  background: #2230d2;
+}
+
+.button:disabled {
+  color: #5e6c84;
+  background: white;
+}
