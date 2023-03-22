@@ -72,6 +72,7 @@ body {
 
 .social_icons {
   margin-top: 15px;
+  margin-left: -20px;
   margin-bottom: 100px;
   display: flex;
 }
@@ -82,6 +83,10 @@ body {
 
 .icon {
   height: 20px;
+}
+
+li {
+  list-style: none;
 }
 
 .button {
