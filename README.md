@@ -80,7 +80,7 @@ Ready for use it.
 
 👤 Alvaro Iporre
 
-- GitHub: [@alvaroiporre](https://https://github.com/alvaroiporre)
+- GitHub: [@alvaroiporre](https://github.com/alvaroiporre)
 - Twitter: [@alvaro.iporre](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/alvaro-iporre-martiez-501533124/)
 
@@ -110,6 +110,11 @@ If you like this please ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank to my family and Microverse.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
 
