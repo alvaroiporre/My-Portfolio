@@ -238,6 +238,10 @@ li {
   width: 10px;
 }
 
+.features {
+  padding: 0;
+}
+
 .arrow_icon_active {
   transform: rotate(90deg);
 }
