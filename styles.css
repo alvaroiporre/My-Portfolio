@@ -248,6 +248,7 @@ li {
 .contact_me_footer {
   background-color: white;
   background-image: url('images/contact_me_background.png');
+  
   padding: 20% 5%;
   color: white;
   text-align: center;
@@ -283,8 +284,14 @@ li {
   flex-direction: column;  
 }
 
+.textarea {
+  height: 170px;
+}
+
 .footer_button {
   width: 40%;
   font-size: 15px;
   margin-left: 2%;
+  border: none;
+  font-weight: 500;
 }
