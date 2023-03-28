@@ -164,7 +164,7 @@ li {
 
 .technologies {
   margin: 15px 0;
-  padding: 0;
+  padding: 0;  
 }
 
 .technologies li {
@@ -244,3 +244,18 @@ li {
 .arrow_icon_active {
   transform: rotate(90deg);
 }
+
+.contact_me_footer {
+  background-color: white;
+  background-image: url('images/contact_me_background.png');
+  padding: 20% 5%;
+  color: white;
+}
+
+.input {
+  height: auto;
+  width: auto;
+}
+
+
+
