@@ -164,7 +164,7 @@ li {
 
 .technologies {
   margin: 15px 0;
-  padding: 0;  
+  padding: 0;
 }
 
 .technologies li {
@@ -248,7 +248,6 @@ li {
 .contact_me_footer {
   background-color: white;
   background-image: url('images/contact_me_background.png');
-  
   padding: 20% 5%;
   color: white;
   text-align: center;
@@ -271,17 +270,18 @@ li {
   border-radius: 5px;
   border: none;
   font-family: 'Poppins', sans-serif;
-  color: #172B4D;
+  color: #172b4d;
   font-weight: 500;
   font-size: medium;
 }
+
 .input::placeholder {
-  color: #B3BAC5;
+  color: #b3bac5;
 }
 
 .footer_form {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 .textarea {
