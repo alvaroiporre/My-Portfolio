@@ -250,11 +250,42 @@ li {
   background-image: url('images/contact_me_background.png');
   padding: 20% 5%;
   color: white;
+  text-align: center;
+}
+
+.footer_title {
+  font-size: xx-large;
+  margin-top: 10%;
+}
+
+.footer_paragraph {
+  font-size: 18px;
+  font-style: normal;
+  margin: 5% 2%;
 }
 
 .input {
-  height: auto;
-  width: auto;
+  margin: 2%;
+  padding: 3% 2%;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  color: #172B4D;
+  font-weight: 500;
+  font-size: medium;
+}
+.input::placeholder {
+  color: #B3BAC5;
+}
+
+.footer_form {
+  display: flex;
+  flex-direction: column;  
+}
+
+.footer_button {
+  width: 40%;
+  font-size: 15px;
 }
 
 
