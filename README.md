@@ -100,8 +100,7 @@ Ready for use it.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Finish the mobile version]**
-- [ ] **[Desktop Version]**
+- [ ] **[Add Functionality]**
 - [ ] **[Modal features]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
