@@ -59,7 +59,7 @@ body {
 .title {
   margin-top: 120px;
   font-size: xxx-large;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .paragraph {
@@ -483,8 +483,8 @@ li {
     margin-right: auto;
     font-size: 16px;
     padding: 3%;
-    
   }
+
   .paragraph {
     text-align: left;
     font-style: normal;
