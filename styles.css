@@ -37,7 +37,8 @@ body {
   height: 12px;
   width: 18px;
 }
-.nav_menu{
+
+.nav_menu {
   display: none;
 }
 
@@ -45,7 +46,7 @@ body {
   margin-top: 36px;
   background-image: url('images/mobile_background.svg');
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   padding-bottom: 100px;
 }
 
@@ -122,18 +123,19 @@ li {
   background: white;
 }
 
-.works-container{
+.works-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .main_section {
   background-color: white;
   margin-top: 20%;
   margin-bottom: 10%;
   width: 90%;
-  max-width: 720px; 
+  max-width: 720px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -143,13 +145,11 @@ li {
 
 .content_card {
   margin: 5%;
-
 }
 
 .image_card {
   margin: 3%;
   width: 94%;
-  
 }
 
 .title_card {
@@ -207,7 +207,6 @@ li {
   color: #172b4d;
   display: flex;
   flex-direction: column;
-  
 }
 
 .bottom {
@@ -323,9 +322,11 @@ li {
   .header {
     border-radius: 0 0 0 100px;
   }
+
   .menu_icon {
     display: none;
   }
+
   .nav_menu {
     display: flex;
     justify-content: flex-end;
@@ -335,13 +336,12 @@ li {
 
   .nav_content {
     width: 80%;
-
   }
-  .nav_li_item{
+
+  .nav_li_item {
     text-decoration: none;
     color: #344563;
     font-weight: 500;
-    
   }
 
   .content_header {
@@ -349,11 +349,10 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
 
-  .title{
-    font-size: 65px;
+  .title {
+    font-size: 60px;
     width: 600px;
     margin-left: 5%;
   }
@@ -362,17 +361,15 @@ li {
     margin: 10% 3%;
     background-image: url('images/desktop_backgroound.svg');
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     display: flex;
     justify-content: center;
   }
 
-  
-
   .main_section {
     background-color: white;
     min-width: 720px;
-    max-width: 1500px; 
+    max-width: 1500px;
     border-radius: 20px;
     justify-content: space-between;
   }
@@ -393,7 +390,7 @@ li {
     margin: 5%;
     width: 40%;
   }
-  
+
   .content_image_card {
     width: 60%;
     height: 100%;
@@ -401,14 +398,17 @@ li {
     justify-content: center;
     align-items: center;
   }
+
   .image_card {
     margin: 4%;
     height: 100%;
   }
+
   .about_myself_section {
     flex-direction: row;
     padding: 5%;
   }
+
   .about_me_1 {
     width: 47%;
     margin-right: 4%;
@@ -449,10 +449,8 @@ li {
     justify-content: center;
     align-items: center;
   }
+
   .contact-me {
     max-width: 600px;
   }
-
-
 }
-  
