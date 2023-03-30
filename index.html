@@ -18,10 +18,18 @@
             <div class="logo_nav">
                 <a href="#"><img class="image_nav" src="images/my_logo.svg" alt="logo"></a>
             </div>
-            <a href="#"><img class="menu_icon" src="images/menu.svg" alt="menu"></a>
+            <div class="nav_content">
+                <a href="#"><img class="menu_icon" src="images/menu.svg" alt="menu"></a>
+                <ul class="nav_menu">
+                    <li><a class="nav_li_item" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav_li_item" href="#about_me">About me</a></li>
+                    <li><a class="nav_li_item" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
         <section class="first_section">
-            <h1 class="title content">I’m Alvaro. Glad to see you!</h1>
+            <div class="content_header">
+            <h1 class="title content">I’m Alvaro. <br> Glad to see you!</h1>
             <p class="paragraph content">I’m a software developer! I can help you build a product , feature or website
                 Look
                 through some of my work and experience! If you like what you see and have a project you need coded,
@@ -45,12 +53,13 @@
                 </li>
 
             </ul>
+            </div>
         </section>
     </header>
     <main>
         <section class="works-container">
-            <div class="main_section">
-                <div>
+            <div class="section-1 main_section">
+                <div class="content_image_card">
                     <img class="image_card" src="/images/tonic_snapshot.png" alt="snapshot tonic">
                 </div>
                 <div class="content_card">
@@ -76,8 +85,8 @@
                 </div>
             </div>
 
-            <div class="main_section">
-                <div>
+            <div class="section-2 main_section">
+                <div class="content_image_card">
                     <img class="image_card" src="/images/multi_posrt_snapshot.png" alt="snapshot tonic">
                 </div>
                 <div class="content_card">
@@ -103,8 +112,8 @@
                 </div>
             </div>
 
-            <div class="main_section">
-                <div>
+            <div class="section-1 main_section">
+                <div class="content_image_card">
                     <img class="image_card" src="/images/tonic2_snapshot.png" alt="snapshot tonic">
                 </div>
                 <div class="content_card">
@@ -130,8 +139,8 @@
                 </div>
             </div>
 
-            <div class="main_section">
-                <div>
+            <div class="section-2 main_section">
+                <div class="content_image_card">
                     <img class="image_card" src="/images/multi_post_stories_snapshot.png" alt="snapshot tonic">
                 </div>
                 <div class="content_card">
@@ -158,7 +167,8 @@
             </div>
 
             <div class="about_myself_section">
-                <h2 class="title">About Myself</h2>
+                <div class="about_me_1">
+                    <h2 class="title">About Myself</h2>
                 <p class="paragraph">Hello I’m a software developer! I can help you build a product , feature or
                     website.
                     Look through some of my work and experience! If you like what you see and have a project you need
@@ -170,7 +180,7 @@
                     </a>
                 </div>
 
-                <ul class="social_icons bottom">
+                <ul class="social_icons">
                     <li><a href="#" class="social_icon"><img class="icon" src="images/twitter_icon.svg"
                                 alt="twitter"></a>
                     </li>
@@ -186,28 +196,33 @@
                     </li>
 
                 </ul>
-                <button class="button" type="button"><b>Get my resume</b></button>
-                <ul class="features">
-                    <li class="second_menu">
-                        <p class="languages">Languages</p>
-                        <img class="arrow_icon arrow_icon_active" src="images/icon_arrow.png" alt="arrow">
-
-                    </li>
-                    <ul class="languages_content">
-                        <li><img src="images/js_icon.png" alt="javascript"><b class="language">JavaScript</b></li>
-                        <li><img src="images/html_icon.png" alt="html"><b class="language">HTML</b></li>
-                        <li><img src="images/css_icon.PNG" alt="css"><b class="language">CSS</b></li>
+                <button class="button bottom" type="button"><b>Get my resume</b></button>
+                </div>
+                <div class="about_me_2">
+                    <ul class="features">
+                        <li class="second_menu">
+                            <p class="languages">Languages</p>
+                            <img class="arrow_icon arrow_icon_active" src="images/icon_arrow.png" alt="arrow">
+    
+                        </li>
+                        <ul class="languages_content">
+                            <li><img src="images/js_icon.png" alt="javascript"><b class="language">JavaScript</b></li>
+                            <li><img src="images/html_icon.png" alt="html"><b class="language">HTML</b></li>
+                            <li><img src="images/css_icon.PNG" alt="css"><b class="language">CSS</b></li>
+                        </ul>
+                        <li class="second_menu line">
+    
+                            <p class="languages">Frameworks</p>
+                            <img class="arrow_icon" src="images/icon_arrow.png" alt="arrow">
+                        </li>
+                        <li class="second_menu line">
+                            <p class="languages">Skills</p>
+                            <img class="arrow_icon" src="images/icon_arrow.png" alt="arrow">
+                        </li>
                     </ul>
-                    <li class="second_menu line">
-
-                        <p class="languages">Frameworks</p>
-                        <img class="arrow_icon" src="images/icon_arrow.png" alt="arrow">
-                    </li>
-                    <li class="second_menu line">
-                        <p class="languages">Skills</p>
-                        <img class="arrow_icon" src="images/icon_arrow.png" alt="arrow">
-                    </li>
-                </ul>
+                </div>
+                
+                
             </div>
         </section>
     </main>
@@ -220,7 +235,7 @@
                 <input type="text" id="name" name="name" class="input" placeholder="Your Name" maxlength="30" required>
                 <input type="email" id="email" name="email" class="input" placeholder="Your Email" required>
                 <textarea name="message" id="message" cols="30" rows="10" class="textarea input" placeholder="Write your message here..." required maxlength="500"></textarea>
-                <button class="footer_button button" type="submit">Get in touch</button>
+                <button class="footer_button button" type="submit"><b>Get in touch</b></button>
             </form>
         </section>
     </footer>
