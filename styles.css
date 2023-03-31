@@ -5,7 +5,7 @@
 
 body {
   background-color: #e5e5e5;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .header {
@@ -44,7 +44,7 @@ body {
 
 .first_section {
   margin-top: 36px;
-  background-image: url('images/mobile_background.svg');
+  background-image: url("images/mobile_background.svg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 100px;
@@ -270,7 +270,7 @@ li {
 
 .contact_me_footer {
   background-color: white;
-  background-image: url('images/contact_me_background.png');
+  background-image: url("images/contact_me_background.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20% 5%;
@@ -294,7 +294,7 @@ li {
   padding: 3% 2%;
   border-radius: 5px;
   border: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #172b4d;
   font-weight: 500;
   font-size: medium;
@@ -382,7 +382,7 @@ li {
 
   .first_section {
     margin: 10% 3%;
-    background-image: url('images/desktop_backgroound.svg');
+    background-image: url("images/desktop_backgroound.svg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -464,7 +464,7 @@ li {
 
   .contact_me_footer {
     background-color: white;
-    background-image: url('images/desktop_footer_background.png');
+    background-image: url("images/desktop_footer_background.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -500,7 +500,15 @@ li {
     line-height: 24px;
   }
 
-  image_nav {
-    animation: rotate 2s linear infinite;
+  .image_nav {
+    animation: rotate 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+  }
+  @keyframes rotate {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
   }
 }
