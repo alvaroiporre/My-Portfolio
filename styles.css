@@ -395,6 +395,8 @@ li {
     max-width: 1500px;
     border-radius: 20px;
     justify-content: space-between;
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
 
   .section-1 {
