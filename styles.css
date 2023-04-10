@@ -333,6 +333,11 @@ li {
   padding: 5%;
 }
 
+.footer_button:hover {
+  color: white;
+  background: #606bc3;
+}
+
 @media screen and (min-width: 768px) {
   .navbar {
     position: fixed;

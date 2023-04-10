@@ -96,6 +96,13 @@ Ready for use it.
 - Twitter: [@mrcbq](https://twitter.com/mrcbq)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/mrcbq)
 
+👤 **Steven Wafeek**
+
+- GitHub: [StevenWafeek](https://github.com/StevenWafeek)
+- Twitter: [steven_hakeem](https://twitter.com/steven_hakeem)
+- LinkedIn: [steven wafeek
+](https://www.linkedin.com/in/steven-wafeek-b629341b6/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
