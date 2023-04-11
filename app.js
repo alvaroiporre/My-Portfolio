@@ -6,7 +6,52 @@ const modalClose = document.querySelector('.modal_close');
 
 
 
-const projects = [];
+const projects = [
+    {
+        id: 0,
+        type: 1,
+        title: 'Tonic',
+        image: 'images/tonic_snapshot.png',
+        subtitle1: 'CANOPY',
+        subtitle2: 'Back End Dev',
+        year: '2015',
+        paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap']
+    },
+    {
+        id: 1,
+        type: 2,
+        title: 'Multi-Post Stories',
+        image: 'images/multi_posrt_snapshot.png',
+        subtitle1: 'CANOPY',
+        subtitle2: 'Back End Dev',
+        year: '2015',
+        paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        technologies: ['HTML', 'CSS', 'JavaScript']
+    },
+    {
+        id: 2,
+        type: 1,
+        title: 'Tonic',
+        image: 'images/tonic2_snapshot.png',
+        subtitle1: 'CANOPY',
+        subtitle2: 'Back End Dev',
+        year: '2015',
+        paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        technologies: ['HTML', 'CSS', 'JavaScript']
+    },
+    {
+        id: 3,
+        type: 2,
+        title: 'Tonic',
+        image: 'images/multi_post_stories_snapshot.png',
+        subtitle1: 'CANOPY',
+        subtitle2: 'Back End Dev',
+        year: '2015',
+        paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        technologies: ['HTML', 'CSS', 'JavaScript']
+    },
+];
 
 hamburguer.addEventListener('click', () => {
   hamburguer.classList.toggle('active');
