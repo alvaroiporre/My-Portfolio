@@ -24,7 +24,7 @@ const projects = [
     subtitle2: 'Back End Dev',
     year: '2015',
     paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Ruby'],
   },
   {
     id: 2,
@@ -79,10 +79,7 @@ projects.forEach((work) => {
                         ${work.paragraph}
                     </p>
                     <div>
-                        <ul class="technologies">
-                            <li>${work.technologies[0]}</li>
-                            <li>${work.technologies[1]}</li>
-                            <li>${work.technologies[2]}</li>
+                        <ul class="technologies list_technologies_${work.id}">
                         </ul>
                     </div>
                     <button onClick="popupModal(${work.id})" type="button" class="button_card button"><b>See project</b></button>
@@ -90,6 +87,9 @@ projects.forEach((work) => {
             </div>
 
    `;
+  work.technologies.forEach((technology) => {
+    document.querySelector(`.list_technologies_${work.id}`).innerHTML += `<li>${technology}</li>`;
+  });
 });
 
 function popupModal(x) {
@@ -110,27 +110,28 @@ function popupModal(x) {
                             <h6 class="second_subtitle_card">${projects[x].year}</h6>
                         </div>
                         <div class="content_image_modal">
-                            <img class="image_modal" src="${projects[x].image}" alt="snapshot tonic">
+                            <img class="image_modal" src="images/snapshoot_portfolio_modal.png" alt="snapshot tonic">
                         </div>
                         <div class="modal_footer">
                         <p class="paragraph_card paragraph_modal">
                             ${projects[x].paragraph}
                         </p>
                         <div class="right_modal">
-                            <ul class="technologies">
-                                <li>${projects[x].technologies[0]}</li>
-                                <li>${projects[x].technologies[1]}</li>
-                                <li>${projects[x].technologies[2]}</li>
+                            <ul class="technologies technologies_modal">
                             </ul>
+                            <hr class="modal_line">
                             <div class="modal_buttons">
-                                <button type="button" class="button_modal button"><b>See Live</b> <img src="images/live_icon.png" alt="live icon"></button>
-                                <button type="button" class="button_modal button"><b>See source</b><img src="images/git_icon.png" alt="git icon"> </button>
+                                <button type="button" class="button_modal button">See Live<img src="images/live_icon.png" alt="live icon"></button>
+                                <button type="button" class="button_modal button">See source<img src="images/git_icon.png" alt="git icon"> </button>
                             </div>
                         </div>
                         </div>
                     </div>
                 </div>
     `;
+  projects[x].technologies.forEach((technology) => {
+    document.querySelector('.technologies_modal').innerHTML += `<li>${technology}</li>`;
+  });
 }
 
 function closeModal() {

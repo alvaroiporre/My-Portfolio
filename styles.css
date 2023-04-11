@@ -409,13 +409,13 @@ li {
   background-color: white;
   position: relative;
   width: 90%;
-  height: 90%;
-  max-width: 720px;
+  height: 95%;
+  max-width: 500px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
+  overflow: scroll;
   margin: 15px;
 }
 
@@ -442,6 +442,7 @@ li {
 
 .button_modal {
   display: flex;
+  font-size: medium;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -449,11 +450,15 @@ li {
 
 .image_modal {
   width: 100%;
-  max-width: 350px;
+}
+
+.modal_line {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
   .navbar {
+    z-index: 2;
     position: fixed;
     width: 100%;
     background-color: #fff;
@@ -659,15 +664,18 @@ li {
   .modal_footer {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    height: 35%;
+    gap: 20px;
   }
 
   .image_modal {
     margin-top: 20px;
+    max-width: 1000px;
+    height: 60%;
   }
 
   .modal {
-    width: 90%;
+    width: 70%;
     height: 90%;
     max-width: 1000px;
   }
@@ -682,5 +690,23 @@ li {
 
   .right_modal {
     width: 35%;
+  }
+
+  .button_modal {
+    padding: 5px;
+  }
+
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .technologies li {
+    margin-top: 5px;
+  }
+
+  .modal_line {
+    display: block;
+    margin: 10px;
   }
 }
