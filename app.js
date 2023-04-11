@@ -2,55 +2,52 @@ const hamburguer = document.querySelector('.hamburguer');
 const navMenu = document.querySelector('.nav_menu');
 const works = document.getElementById('portfolio');
 const modal = document.querySelector('.section_modal');
-const modalClose = document.querySelector('.modal_close');
-
-
 
 const projects = [
-    {
-        id: 0,
-        type: 1,
-        title: 'Tonic',
-        image: 'images/tonic_snapshot.png',
-        subtitle1: 'CANOPY',
-        subtitle2: 'Back End Dev',
-        year: '2015',
-        paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap']
-    },
-    {
-        id: 1,
-        type: 2,
-        title: 'Multi-Post Stories',
-        image: 'images/multi_posrt_snapshot.png',
-        subtitle1: 'CANOPY',
-        subtitle2: 'Back End Dev',
-        year: '2015',
-        paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        technologies: ['HTML', 'CSS', 'JavaScript']
-    },
-    {
-        id: 2,
-        type: 1,
-        title: 'Tonic',
-        image: 'images/tonic2_snapshot.png',
-        subtitle1: 'CANOPY',
-        subtitle2: 'Back End Dev',
-        year: '2015',
-        paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        technologies: ['HTML', 'CSS', 'JavaScript']
-    },
-    {
-        id: 3,
-        type: 2,
-        title: 'Tonic',
-        image: 'images/multi_post_stories_snapshot.png',
-        subtitle1: 'CANOPY',
-        subtitle2: 'Back End Dev',
-        year: '2015',
-        paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        technologies: ['HTML', 'CSS', 'JavaScript']
-    },
+  {
+    id: 0,
+    type: 1,
+    title: 'Tonic',
+    image: 'images/tonic_snapshot.png',
+    subtitle1: 'CANOPY',
+    subtitle2: 'Back End Dev',
+    year: '2015',
+    paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+  },
+  {
+    id: 1,
+    type: 2,
+    title: 'Multi-Post Stories',
+    image: 'images/multi_posrt_snapshot.png',
+    subtitle1: 'CANOPY',
+    subtitle2: 'Back End Dev',
+    year: '2015',
+    paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+  },
+  {
+    id: 2,
+    type: 1,
+    title: 'Tonic',
+    image: 'images/tonic2_snapshot.png',
+    subtitle1: 'CANOPY',
+    subtitle2: 'Back End Dev',
+    year: '2015',
+    paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+  },
+  {
+    id: 3,
+    type: 2,
+    title: 'Tonic',
+    image: 'images/multi_post_stories_snapshot.png',
+    subtitle1: 'CANOPY',
+    subtitle2: 'Back End Dev',
+    year: '2015',
+    paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+  },
 ];
 
 hamburguer.addEventListener('click', () => {
@@ -63,9 +60,8 @@ navMenu.addEventListener('click', () => {
   navMenu.classList.toggle('active');
 });
 
-
-projects.map((work) => {
-    works.innerHTML += `
+projects.forEach((work) => {
+  works.innerHTML += `
     <div class="section-${work.type} main_section">
                 <div class="content_image_card">
                     <img class="image_card" src="${work.image}" alt="snapshot tonic">
@@ -93,14 +89,13 @@ projects.map((work) => {
                 </div>
             </div>
 
-    `;
+   `;
 });
 
-function popupModal(x){
-    console.log(projects[x]);
-    modal.classList.toggle('show');
+function popupModal(x) {
+  modal.classList.toggle('show');
 
-    modal.innerHTML += `
+  modal.innerHTML += `
                 <div class="modal">
                     <div class="modal_content">
                         <div class="header_modal">
@@ -138,8 +133,11 @@ function popupModal(x){
     `;
 }
 
-function closeModal(){
-    modal.classList.toggle('show');
-    const modalContent = document.querySelector('.modal');
-    modalContent.remove();
+function closeModal() {
+  modal.classList.toggle('show');
+  const modalContent = document.querySelector('.modal');
+  modalContent.remove();
 }
+
+popupModal(0);
+closeModal();

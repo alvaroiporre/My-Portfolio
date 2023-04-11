@@ -201,6 +201,7 @@ li {
 .main {
   position: relative;
 }
+
 .content_card {
   margin: 5%;
 }
@@ -387,9 +388,11 @@ li {
   display: flex;
   flex-direction: column;
 }
+
 .section_modal {
   display: none;
 }
+
 .show {
   z-index: 10;
   position: fixed;
@@ -420,7 +423,7 @@ li {
   padding: 5%;
 }
 
-.header_modal{
+.header_modal {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -444,11 +447,10 @@ li {
   gap: 5px;
 }
 
-.image_modal{
+.image_modal {
   width: 100%;
   max-width: 350px;
 }
-
 
 @media screen and (min-width: 768px) {
   .navbar {
@@ -659,22 +661,25 @@ li {
     flex-direction: row;
     gap: 30px;
   }
+
   .image_modal {
     margin-top: 20px;
   }
+
   .modal {
     width: 90%;
     height: 90%;
     max-width: 1000px;
-    
   }
-  
+
   .modal_content {
     padding: 20px;
   }
+
   .paragraph_modal {
     width: 60%;
   }
+
   .right_modal {
     width: 35%;
   }
