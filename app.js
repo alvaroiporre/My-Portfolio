@@ -1,54 +1,12 @@
 const hamburguer = document.querySelector('.hamburguer');
 const navMenu = document.querySelector('.nav_menu');
 const works = document.getElementById('portfolio');
+const modal = document.querySelector('.section_modal');
+const modalClose = document.querySelector('.modal_close');
 
-const projects = [
-    {
-        id: 0,
-        type: 1,
-        title: 'Tonic',
-        image: 'images/tonic_snapshot.png',
-        subtitle1: 'CANOPY',
-        subtitle2: 'Back End Dev',
-        year: '2015',
-        paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap']
-    },
-    {   
-        id: 1,
-        type: 2,
-        title: 'Multi-Post Stories',
-        image: 'images/multi_posrt_snapshot.png',
-        subtitle1: 'CANOPY',
-        subtitle2: 'Back End Dev',
-        year: '2015',
-        paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        technologies: ['HTML', 'CSS', 'JavaScript']
-    },
-    {   
-        id: 2,
-        type: 1,
-        title: 'Tonic',
-        image: 'images/tonic2_snapshot.png',
-        subtitle1: 'CANOPY',
-        subtitle2: 'Back End Dev',
-        year: '2015',
-        paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        technologies: ['HTML', 'CSS', 'JavaScript']
-    },
-    {
-        id: 3,
-        type: 2,
-        title: 'Tonic',
-        image: 'images/multi_post_stories_snapshot.png',
-        subtitle1: 'CANOPY',
-        subtitle2: 'Back End Dev',
-        year: '2015',
-        paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        technologies: ['HTML', 'CSS', 'JavaScript']
-    },
 
-]
+
+const projects = [];
 
 hamburguer.addEventListener('click', () => {
   hamburguer.classList.toggle('active');
@@ -59,6 +17,7 @@ navMenu.addEventListener('click', () => {
   hamburguer.classList.toggle('active');
   navMenu.classList.toggle('active');
 });
+
 
 projects.map((work) => {
     works.innerHTML += `
@@ -80,17 +39,62 @@ projects.map((work) => {
                     </p>
                     <div>
                         <ul class="technologies">
-                            ${work.technologies.map(technology => {
-                                works.innerHTML += '<li>' + technology + '</li>';    
-                            })}
+                            <li>${work.technologies[0]}</li>
+                            <li>${work.technologies[1]}</li>
+                            <li>${work.technologies[2]}</li>
                         </ul>
                     </div>
-                    <button id="${work.id}" type="button" class="button_card button"><b>See project</b></button>
+                    <button onClick="popupModal(${work.id})" type="button" class="button_card button"><b>See project</b></button>
                 </div>
             </div>
 
-    `
+    `;
 });
 
+function popupModal(x){
+    console.log(projects[x]);
+    modal.classList.toggle('show');
 
+    modal.innerHTML += `
+                <div class="modal">
+                    <div class="modal_content">
+                        <div class="header_modal">
+                            <h2 class="title_modal">${projects[x].title}</h2>
+                            <img class="modal_close" onClick="closeModal()" src="images/close_icon.png" alt="close">
+                        </div>
+                        <div class="subtitle_card">
+                            <h6 class="first_subtitle_card">${projects[x].subtitle1}</h6>
+                            <img class="point_icon" src="images/point_icon.png" alt="point">
+                            <h6 class="second_subtitle_card">${projects[x].subtitle2}</h6>
+                            <img class="point_icon" src="images/point_icon.png" alt="point">
+                            <h6 class="second_subtitle_card">${projects[x].year}</h6>
+                        </div>
+                        <div class="content_image_modal">
+                            <img class="image_modal" src="${projects[x].image}" alt="snapshot tonic">
+                        </div>
+                        <div class="modal_footer">
+                        <p class="paragraph_card paragraph_modal">
+                            ${projects[x].paragraph}
+                        </p>
+                        <div class="right_modal">
+                            <ul class="technologies">
+                                <li>${projects[x].technologies[0]}</li>
+                                <li>${projects[x].technologies[1]}</li>
+                                <li>${projects[x].technologies[2]}</li>
+                            </ul>
+                            <div class="modal_buttons">
+                                <button type="button" class="button_modal button"><b>See Live</b> <img src="images/live_icon.png" alt="live icon"></button>
+                                <button type="button" class="button_modal button"><b>See source</b><img src="images/git_icon.png" alt="git icon"> </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+    `;
+}
 
+function closeModal(){
+    modal.classList.toggle('show');
+    const modalContent = document.querySelector('.modal');
+    modalContent.remove();
+}
