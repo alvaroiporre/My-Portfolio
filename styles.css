@@ -390,7 +390,7 @@ li {
 }
 
 .section_modal {
-  display: none;
+  display: none; 
 }
 
 .show {
@@ -445,6 +445,7 @@ li {
   font-size: medium;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   gap: 5px;
 }
 
@@ -678,6 +679,7 @@ li {
     width: 70%;
     height: 90%;
     max-width: 1000px;
+
   }
 
   .modal_content {
@@ -690,14 +692,16 @@ li {
 
   .right_modal {
     width: 35%;
+    display: flex;
+    flex-direction: column;
   }
 
   .button_modal {
     padding: 5px;
   }
-
-  .technologies {
+  .technologies{
     display: flex;
+
     flex-wrap: wrap;
   }
 
@@ -707,6 +711,6 @@ li {
 
   .modal_line {
     display: block;
-    margin: 10px;
+    margin: 10px; 
   }
 }

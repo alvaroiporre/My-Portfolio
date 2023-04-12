@@ -110,7 +110,7 @@ function popupModal(x) {
                             <h6 class="second_subtitle_card">${projects[x].year}</h6>
                         </div>
                         <div class="content_image_modal">
-                            <img class="image_modal" src="images/snapshoot_portfolio_modal.png" alt="snapshot tonic">
+                            <img class="image_modal" src="${projects[x].image}" alt="snapshot tonic">
                         </div>
                         <div class="modal_footer">
                         <p class="paragraph_card paragraph_modal">
