@@ -457,6 +457,15 @@ li {
   display: none;
 }
 
+#msgErrorEmail {
+  color: red;
+  font-size: small;
+  text-align: left;
+  background-color: yellow;
+  margin: 0 2%;
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
   .navbar {
     z-index: 2;

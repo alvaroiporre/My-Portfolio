@@ -142,3 +142,24 @@ function closeModal() {
 
 popupModal(0);
 closeModal();
+
+
+const form = document.getElementById('contact_form');
+const email = document.getElementById('email');
+const msgError = document.getElementById('msgErrorEmail');
+
+const LOWER_CASE_EMAIL = /[A-Z]/;
+
+
+form.addEventListener('submit', (event) => {
+
+    event.preventDefault();
+    
+    if(email.value.match(LOWER_CASE_EMAIL) != null){
+        msgError.innerText = 'Please enter only lowercase characteres in the email field.';
+    }else{
+        form.submit();
+    }
+});
+
+
