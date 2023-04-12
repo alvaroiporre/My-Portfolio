@@ -390,7 +390,7 @@ li {
 }
 
 .section_modal {
-  display: none; 
+  display: none;
 }
 
 .show {
@@ -679,7 +679,6 @@ li {
     width: 70%;
     height: 90%;
     max-width: 1000px;
-
   }
 
   .modal_content {
@@ -699,9 +698,9 @@ li {
   .button_modal {
     padding: 5px;
   }
-  .technologies{
-    display: flex;
 
+  .technologies {
+    display: flex;
     flex-wrap: wrap;
   }
 
@@ -711,6 +710,6 @@ li {
 
   .modal_line {
     display: block;
-    margin: 10px; 
+    margin: 10px;
   }
 }
