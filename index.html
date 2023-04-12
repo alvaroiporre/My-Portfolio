@@ -134,11 +134,12 @@
             <h2 class="footer_title">Contact me</h2>
             <p class="footer_paragraph">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
                 I’d love to help with it!</p>
-            <form class="footer_form" action="https://formspree.io/f/xvonwpnd" method="POST">
+            <form class="footer_form" action="https://formspree.io/f/xvonwpnd" method="POST" id="contact_form">
                 <input type="text" id="name" name="name" class="input" placeholder="Your Name" maxlength="30" required>
                 <input type="email" id="email" name="email" class="input" placeholder="Your Email" required>
                 <textarea name="message" id="message" cols="30" rows="10" class="textarea input" placeholder="Write your message here..." required maxlength="500"></textarea>
-                <button class="footer_button button" type="submit"><b>Get in touch</b></button>
+                <label for="email" id="msgErrorEmail"></label>
+                <input class="footer_button button" type="submit" value="Get in touch">
             </form>
         </section>
     </footer>
