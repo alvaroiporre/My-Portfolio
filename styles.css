@@ -33,11 +33,11 @@ body {
 }
 
 .hamburguer {
+  z-index: 2;
   position: relative;
   margin-right: 36px;
   height: 12px;
   width: 18px;
-  z-index: 10;
 }
 
 .bar {
@@ -196,6 +196,10 @@ li {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 10px;
+}
+
+.main {
+  position: relative;
 }
 
 .content_card {
@@ -380,8 +384,82 @@ li {
   background: #606bc3;
 }
 
+.modal_footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.section_modal {
+  display: none;
+}
+
+.show {
+  z-index: 10;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background-color: white;
+  position: relative;
+  width: 90%;
+  height: 95%;
+  max-width: 500px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: scroll;
+  margin: 15px;
+}
+
+.modal_content {
+  padding: 5%;
+}
+
+.header_modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.title_modal {
+  font-size: x-large;
+  color: #172b4d;
+}
+
+.modal_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.button_modal {
+  display: flex;
+  font-size: medium;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.image_modal {
+  width: 100%;
+}
+
+.modal_line {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .navbar {
+    z-index: 2;
     position: fixed;
     width: 100%;
     background-color: #fff;
@@ -582,5 +660,56 @@ li {
     to {
       transform: rotateY(0deg);
     }
+  }
+
+  .modal_footer {
+    display: flex;
+    flex-direction: row;
+    height: 35%;
+    gap: 20px;
+  }
+
+  .image_modal {
+    margin-top: 20px;
+    max-width: 1000px;
+    height: 60%;
+  }
+
+  .modal {
+    width: 70%;
+    height: 90%;
+    max-width: 1000px;
+  }
+
+  .modal_content {
+    padding: 20px;
+  }
+
+  .paragraph_modal {
+    width: 60%;
+  }
+
+  .right_modal {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button_modal {
+    padding: 5px;
+  }
+
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .technologies li {
+    margin-top: 5px;
+  }
+
+  .modal_line {
+    display: block;
+    margin: 10px;
   }
 }
