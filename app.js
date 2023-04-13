@@ -2,6 +2,12 @@ const hamburguer = document.querySelector('.hamburguer');
 const navMenu = document.querySelector('.nav_menu');
 const works = document.getElementById('portfolio');
 const modal = document.querySelector('.section_modal');
+const form = document.getElementById('contact_form');
+const name = document.getElementById('name'); 
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+const msgError = document.getElementById('msgErrorEmail');
+
 
 const projects = [
   {
@@ -49,6 +55,9 @@ const projects = [
     technologies: ['HTML', 'CSS', 'JavaScript'],
   },
 ];
+
+setFormData();
+
 
 hamburguer.addEventListener('click', () => {
   hamburguer.classList.toggle('active');
@@ -143,9 +152,7 @@ function closeModal() {
 popupModal(0);
 closeModal();
 
-const form = document.getElementById('contact_form');
-const email = document.getElementById('email');
-const msgError = document.getElementById('msgErrorEmail');
+
 
 const LOWER_CASE_EMAIL = /[A-Z]/;
 
@@ -155,6 +162,15 @@ form.addEventListener('submit', (event) => {
   if (email.value.match(LOWER_CASE_EMAIL) != null) {
     msgError.innerText = 'Please enter only lowercase characteres in the email field.';
   } else {
+    let data = {
+      name: name.value, 
+      email: email.value, 
+      message: message.value
+    };
+    localStorage.setItem('userData', JSON.stringify(data));
+
     form.submit();
   }
 });
+
+
