@@ -174,3 +174,12 @@ form.addEventListener('submit', (event) => {
 });
 
 
+function setFormData() { 
+  let userData = localStorage.getItem('userData');
+  if (userData !== null) {
+    let userDataObj = JSON.parse(userData)
+    name.value = userDataObj.name;
+    email.value = userDataObj.email;
+    message.value = userDataObj.message;
+  }
+}
