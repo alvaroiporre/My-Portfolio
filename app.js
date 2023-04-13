@@ -55,7 +55,7 @@ const projects = [
   },
 ];
 
-function setFormData() {
+function getFormData() {
   const userData = localStorage.getItem('userData');
   if (userData !== null) {
     const userDataObj = JSON.parse(userData);
@@ -65,7 +65,20 @@ function setFormData() {
   }
 }
 
-setFormData();
+function setFormData() {
+  const data = {
+    name: name.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem('userData', JSON.stringify(data));
+}
+
+window.onload = () => { getFormData(); };
+
+name.addEventListener('change', () => setFormData());
+email.addEventListener('change', () => setFormData());
+message.addEventListener('change', () => setFormData());
 
 hamburguer.addEventListener('click', () => {
   hamburguer.classList.toggle('active');
@@ -168,13 +181,6 @@ form.addEventListener('submit', (event) => {
   if (email.value.match(LOWER_CASE_EMAIL) != null) {
     msgError.innerText = 'Please enter only lowercase characteres in the email field.';
   } else {
-    const data = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    localStorage.setItem('userData', JSON.stringify(data));
-
     form.submit();
   }
 });
