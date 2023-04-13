@@ -2,6 +2,11 @@ const hamburguer = document.querySelector('.hamburguer');
 const navMenu = document.querySelector('.nav_menu');
 const works = document.getElementById('portfolio');
 const modal = document.querySelector('.section_modal');
+const form = document.getElementById('contact_form');
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+const msgError = document.getElementById('msgErrorEmail');
 
 const projects = [
   {
@@ -49,6 +54,31 @@ const projects = [
     technologies: ['HTML', 'CSS', 'JavaScript'],
   },
 ];
+
+function getFormData() {
+  const userData = localStorage.getItem('userData');
+  if (userData !== null) {
+    const userDataObj = JSON.parse(userData);
+    name.value = userDataObj.name;
+    email.value = userDataObj.email;
+    message.value = userDataObj.message;
+  }
+}
+
+function setFormData() {
+  const data = {
+    name: name.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem('userData', JSON.stringify(data));
+}
+
+window.onload = () => { getFormData(); };
+
+name.addEventListener('change', () => setFormData());
+email.addEventListener('change', () => setFormData());
+message.addEventListener('change', () => setFormData());
 
 hamburguer.addEventListener('click', () => {
   hamburguer.classList.toggle('active');
@@ -142,10 +172,6 @@ function closeModal() {
 
 popupModal(0);
 closeModal();
-
-const form = document.getElementById('contact_form');
-const email = document.getElementById('email');
-const msgError = document.getElementById('msgErrorEmail');
 
 const LOWER_CASE_EMAIL = /[A-Z]/;
 
