@@ -56,7 +56,7 @@ const projects = [
   },
 ];
 
-setFormData();
+
 
 
 hamburguer.addEventListener('click', () => {
