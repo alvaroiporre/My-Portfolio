@@ -167,7 +167,6 @@ function popupModal(x) {
 function closeModal() {
   modal.classList.toggle('show');
   const modalContent = document.querySelector('.modal');
-  modalContent.remove();
 }
 
 popupModal(0);
