@@ -124,7 +124,7 @@ projects.forEach((work) => {
 
 function popupModal(x) {
   modal.classList.toggle('show');
-
+  modal.innerHTML = ''
   modal.innerHTML += `
                 <div class="modal">
                     <div class="modal_content">
