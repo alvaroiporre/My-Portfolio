@@ -209,6 +209,7 @@ li {
 .image_card {
   margin: 3%;
   width: 94%;
+  border-radius: 10px;
 }
 
 .title_card {
@@ -447,6 +448,7 @@ li {
   align-items: center;
   cursor: pointer;
   gap: 5px;
+  text-decoration: none;
 }
 
 .image_modal {

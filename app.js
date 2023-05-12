@@ -12,13 +12,15 @@ const projects = [
   {
     id: 0,
     type: 1,
-    title: 'Tonic',
-    image: 'images/tonic_snapshot.png',
-    subtitle1: 'CANOPY',
-    subtitle2: 'Back End Dev',
-    year: '2015',
-    paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+    title: 'Rock & Roll 2023',
+    image: 'images/RockConcert.png',
+    subtitle1: 'Event Web-Site',
+    subtitle2: 'Front End Dev',
+    year: '2023',
+    paragraph: 'This is the web page used to show information about a Metal Concert, with information about the rock stars and the Event. This project is built in Html, Css and JavaScript.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    live: 'https://alvaroiporre.github.io/Metal-Concert/index.html',
+    sourceCode: 'https://github.com/alvaroiporre/Metal-Concert',
   },
   {
     id: 1,
@@ -30,6 +32,9 @@ const projects = [
     year: '2015',
     paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Ruby'],
+    live: '#',
+    sourceCode: '#',
+
   },
   {
     id: 2,
@@ -41,6 +46,8 @@ const projects = [
     year: '2015',
     paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
+    live: '#',
+    sourceCode: '#',
   },
   {
     id: 3,
@@ -52,6 +59,8 @@ const projects = [
     year: '2015',
     paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
+    live: '#',
+    sourceCode: '#',
   },
 ];
 
@@ -151,8 +160,8 @@ function popupModal(x) {
                             </ul>
                             <hr class="modal_line">
                             <div class="modal_buttons">
-                                <button type="button" class="button_modal button">See Live<img src="images/live_icon.png" alt="live icon"></button>
-                                <button type="button" class="button_modal button">See source<img src="images/git_icon.png" alt="git icon"> </button>
+                                <a href="${projects[x].live}" type="button" class="button_modal button">See Live<img src="images/live_icon.png" alt="live icon"></a>
+                                <a href="${projects[x].sourceCode}" type="button" class="button_modal button">See source<img src="images/git_icon.png" alt="git icon"> </a>
                             </div>
                         </div>
                         </div>
